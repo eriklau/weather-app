@@ -10,6 +10,5 @@ searchBar.addEventListener('click', async () => {
         return;
     }
     const data = await getWeather(inputBar.value);
-    console.log(data.degreesCelsius)
     loadWeather(data);
 });
